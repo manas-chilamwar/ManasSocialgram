@@ -49,7 +49,7 @@ const PostForm = ({ post, action }: PostFormProps) => {
   });
 
   // Query
-  const { mutateAsync: createPost, isLoading: isLoadingCreate } =
+const { mutateAsync: createPost, isLoading: isLoadingCreate } =
     useCreatePost();
   const { mutateAsync: updatePost, isLoading: isLoadingUpdate } =
     useUpdatePost();
